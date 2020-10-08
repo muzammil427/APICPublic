@@ -1,0 +1,63 @@
+---
+swagger: "2.0"
+info:
+  x-ibm-name: "restapi"
+  title: "RestAPI"
+  version: "1.0.0"
+schemes:
+- "https"
+host: "$(catalog.host)"
+basePath: "/restapi"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+securityDefinitions:
+  clientIdHeader:
+    type: "apiKey"
+    in: "header"
+    name: "X-IBM-Client-Id"
+security:
+- clientIdHeader: []
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  assembly:
+    execute:
+    - invoke:
+        target-url: "https://apictutorials.mybluemix.net/branches"
+  phase: "realized"
+paths:
+  /details:
+    get:
+      responses:
+        200:
+          description: "200 OK"
+          schema:
+            $ref: "#/definitions/branch"
+definitions:
+  Address:
+    properties:
+      street1:
+        type: "string"
+      street2:
+        type: "string"
+      city:
+        type: "string"
+      state:
+        type: "string"
+      zip_code:
+        type: "string"
+    additionalProperties: false
+  branch:
+    properties:
+      id:
+        type: "string"
+      type:
+        type: "string"
+      address:
+        $ref: "#/definitions/Address"
+    additionalProperties: false
+tags: []
