@@ -3,7 +3,7 @@ swagger: "2.0"
 info:
   x-ibm-name: "restapi"
   title: "RestAPI"
-  version: "1.0.2"
+  version: "1.0.3"
 schemes:
 - "https"
 host: "$(catalog.host)"
