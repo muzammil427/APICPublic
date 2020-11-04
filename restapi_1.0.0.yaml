@@ -3,7 +3,7 @@ swagger: "2.0"
 info:
   x-ibm-name: "restapi"
   title: "RestAPI"
-  version: "1.0.4"
+  version: "1.0.0"
 schemes:
 - "https"
 host: "$(catalog.host)"
@@ -13,12 +13,18 @@ consumes:
 produces:
 - "application/json"
 securityDefinitions:
+  api-key-1:
+    type: "apiKey"
+    description: ""
+    in: "header"
+    name: "X-IBM-Client-Secret"
   clientIdHeader:
     type: "apiKey"
     in: "header"
     name: "X-IBM-Client-Id"
 security:
-- clientIdHeader: []
+- api-key-1: []
+  clientIdHeader: []
 x-ibm-configuration:
   testable: true
   enforced: true
@@ -28,6 +34,7 @@ x-ibm-configuration:
     execute:
     - invoke:
         target-url: "https://apictutorials.mybluemix.net/branches"
+    catch: []
   phase: "realized"
 paths:
   /details:
