@@ -1,0 +1,33 @@
+
+Loging TO APIC
+D:\Clients\Tapestry\Git\APIC>apic login  --server apimanager.us-south.apiconnect.cloud.ibm.com --username muzammil.zaman@visionetsystems.com --password Habib6093
+Logged into apimanager.us-south.apiconnect.cloud.ibm.com successfully
+
+Push Draft API to Mgmt Server
+D:\Clients\Tapestry\Git\APIC>apic drafts:push restapi_1.0.0.yaml --server  apimanager.us-south.apiconnect.cloud.ibm.com --organization  muzammilzamanvisionetsystemscom-dev
+Pushed restapi_1.0.0.yaml API definition to muzammilzamanvisionetsystemscom-dev:drafts [restapi:1.0.1]
+
+Push Draft Product to Mgmt Server
+D:\Clients\Tapestry\Git\APIC\APICPublic>apic drafts:push accountsproduct_1.0.0.yaml --server  apimanager.us-south.apiconnect.cloud.ibm.com --organization  muzammilzamanvisionetsystemscom-dev
+Pushed restapi_1.0.0.yaml API definition to muzammilzamanvisionetsystemscom-dev:drafts [restapi:1.0.1]
+Pushed accountsproduct_1.0.0.yaml product definition to muzammilzamanvisionetsystemscom-dev:drafts [accountsproduct:1.0.0]
+
+Publish Draft API to Catalog
+D:\Clients\Tapestry\Git\APIC\APICPublic>apic products:publish accountsproduct_1.0.0.yaml --server apimanager.us-south.apiconnect.cloud.ibm.com --organization muzammilzamanvisionetsystemscom-dev --catalog sb
+Staged accountsproduct_1.0.0.yaml to muzammilzamanvisionetsystemscom-dev:sb [accountsproduct:1.0.0]
+Published accountsproduct_1.0.0.yaml to muzammilzamanvisionetsystemscom-dev:sb [accountsproduct:1.0.0]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
