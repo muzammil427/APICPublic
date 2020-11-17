@@ -2,7 +2,7 @@
 product: "1.0.0"
 info:
   name: "accountsproduct"
-  title: "Tapestry Product"
+  title: "Jenkins Tapestry Product"
   version: "1.0.0"
 visibility:
   view:
