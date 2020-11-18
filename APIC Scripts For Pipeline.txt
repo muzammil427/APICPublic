@@ -17,7 +17,7 @@ D:\Clients\Tapestry\Git\APIC\APICPublic>apic products:publish accountsproduct_1.
 Staged accountsproduct_1.0.0.yaml to muzammilzamanvisionetsystemscom-dev:sb [accountsproduct:1.0.0]
 Published accountsproduct_1.0.0.yaml to muzammilzamanvisionetsystemscom-dev:sb [accountsproduct:1.0.0]
 
-
+https://cloud.ibm.com/apis/apiconnect?apim_url=https%3A%2F%2Fapimanager.us-south.apiconnect.cloud.ibm.com%2Fapim%2F%3Forg%3D5fa51b4c0cf230339a485ce3%26region%3Dus-south%26spaceId%3Dd288a7d1-bf04-4720-ac7e-09d9b3bad36a%26authUrl%3Dhttps%253A%252F%252Fmccp.us-south.cf.cloud.ibm.com%252Flogin&guid=2f1f45b7-a983-4739-9397-10419cf37ea4
 
 
 
